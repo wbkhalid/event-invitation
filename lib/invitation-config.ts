@@ -2,6 +2,7 @@ export const invitationConfig = {
   company: {
     name: "Access Solution",
     logoText: "AS",
+    logoSrc: "/brand/access-solution-logo-transparent.png",
   },
   event: {
     title: "A New Beginning",
@@ -17,7 +18,7 @@ export const invitationConfig = {
     address: "E, Block, Block E Phase 1 Johar Town, Lahore, 54000",
     timezone: "Asia/Karachi",
     locationUrl: "https://www.google.com/maps/place/Access+Solution/data=!4m2!3m1!1s0x0:0x2b8a78d8547b0e1b?sa=X&ved=1t:2428&ictx=111",
-    contactNumber: "03299966558",
+    contactNumber: "03067660000",
   },
   gallery: [
     { src: "/office/workspace.jpg", title: "Our Workspace", alt: "Access Solution's shared workspace with a long marble-pattern desk and black office chairs", width: 1600, height: 900 },

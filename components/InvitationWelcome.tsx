@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type ReactNode } from "react";
+import Image from "next/image";
 import {
   AnimatePresence,
   motion,
@@ -46,16 +47,17 @@ export function InvitationWelcome({ children }: InvitationWelcomeProps) {
           >
             <AmbientParticles />
             <motion.div
-              className="relative z-10 w-full max-w-xl"
+              className="welcome-content relative z-10 w-full max-w-xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7 }}
             >
-              <p className="mb-5 text-[0.65rem] uppercase tracking-[0.2em] text-champagne/85 sm:text-xs">
+              <Image src={invitationConfig.company.logoSrc} alt={`${invitationConfig.company.name} logo`} width={311} height={311} priority className="welcome-logo mx-auto object-contain" />
+              <p className="welcome-eyebrow uppercase text-champagne/85">
                 You&apos;re Cordially Invited
               </p>
-              <h1 className="mb-8 font-display text-3xl text-ivory sm:text-4xl">
-                {invitationConfig.company.name}
+              <h1 className="welcome-company font-display text-ivory">
+                <span>{invitationConfig.company.name}</span>
               </h1>
               <motion.button
                 type="button"

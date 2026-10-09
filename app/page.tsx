@@ -12,8 +12,8 @@ export default function Home() {
       <InvitationWelcome>
         <GrandOpeningReveal />
         <CountdownSection />
-        <EventDetails />
         <OfficeGallery />
+        <EventDetails />
         <InvitationMessage />
         <InvitationFooter />
       </InvitationWelcome>

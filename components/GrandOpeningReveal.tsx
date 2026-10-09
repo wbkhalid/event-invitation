@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import { invitationConfig } from "@/lib/invitation-config";
 
-const lines = ["WITH GREAT PLEASURE", invitationConfig.company.name, "CORDIALLY INVITES YOU TO THE"];
+const lines = ["YOU'RE CORDIALLY INVITED", invitationConfig.company.name];
 
 export function GrandOpeningReveal() {
   return (
@@ -11,8 +12,8 @@ export function GrandOpeningReveal() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(212,175,55,.16),transparent_26rem)]" />
       <motion.div className="gold-shimmer absolute top-8 h-px w-1/3" animate={{ x: ["-80vw", "130vw"] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} />
       <div className="hero-content relative mx-auto text-center">
-        <motion.div className="hero-monogram mx-auto grid place-items-center rounded-full border border-champagne/60 bg-ivory/5 font-display text-champagne" initial={{ opacity: 0, scale: 0.84 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-          {invitationConfig.company.logoText}
+        <motion.div className="hero-monogram mx-auto grid place-items-center" initial={{ opacity: 0, scale: 0.84 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+          <Image src={invitationConfig.company.logoSrc} alt={`${invitationConfig.company.name} logo`} width={311} height={311} className="h-full w-full object-contain" />
         </motion.div>
         <div className="hero-intro">
           {lines.map((line, index) => (

@@ -61,7 +61,7 @@ export function InvitationWelcome({ children }: InvitationWelcomeProps) {
                 type="button"
                 onClick={() => setOpened(true)}
                 disabled={opened}
-                aria-label={`Open your invitation to ${invitationConfig.company.name}'s grand opening`}
+                aria-label={`Open your invitation to ${invitationConfig.company.name}'s ${invitationConfig.event.title}`}
                 aria-expanded={opened}
                 aria-controls={revealed ? "invitation-content" : undefined}
                 className="mx-auto block cursor-pointer border-0 bg-transparent p-0 focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-champagne disabled:cursor-default"

@@ -17,18 +17,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: `${invitationConfig.company.name} Grand Opening Invitation`,
-  description: "A premium animated invitation to the grand opening and ribbon cutting ceremony.",
+  title: `${invitationConfig.company.name} - ${invitationConfig.event.title}`,
+  description: invitationConfig.event.description,
   openGraph: {
-    title: `${invitationConfig.company.name} Grand Opening`,
-    description: "You are cordially invited to celebrate the opening of our new office.",
+    title: `${invitationConfig.company.name} - ${invitationConfig.event.title}`,
+    description: invitationConfig.event.description,
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${invitationConfig.company.name} Grand Opening`,
-    description: "You are cordially invited to celebrate the opening of our new office.",
+    title: `${invitationConfig.company.name} - ${invitationConfig.event.title}`,
+    description: invitationConfig.event.description,
   },
 };
 

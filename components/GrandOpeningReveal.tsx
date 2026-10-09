@@ -27,16 +27,16 @@ export function GrandOpeningReveal() {
           <span className="h-px flex-1 bg-gradient-to-l from-transparent to-champagne" />
         </motion.div>
         <motion.h1 className="hero-title font-display uppercase text-champagne" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.42, duration: 0.9 }}>
-          Grand<br />Opening
+          {invitationConfig.event.titleLines.map((line, index) => <span className="block" key={index}>{line}</span>)}
         </motion.h1>
         <motion.p className="hero-eyebrow uppercase text-ivory/78" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.58 }}>
-          Of Our New Office
+          {invitationConfig.event.occasions}
         </motion.p>
         <motion.blockquote className="hero-quote mx-auto max-w-2xl font-display italic text-ivory" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.7 }}>
           &quot;A New Beginning. A Greater Vision. An Exciting Future.&quot;
         </motion.blockquote>
         <motion.p className="hero-message mx-auto max-w-2xl text-ivory/72" initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.82 }}>
-          We are delighted to celebrate this important milestone and would be honored by your presence as we begin an exciting new chapter.
+          {invitationConfig.event.welcomeMessage}
         </motion.p>
       </div>
     </section>

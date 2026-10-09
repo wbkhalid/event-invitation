@@ -1,3 +1,4 @@
+import { OfficeGallery } from "@/components/OfficeGallery";
 import { CountdownSection } from "@/components/CountdownSection";
 import { EventDetails } from "@/components/EventDetails";
 import { GrandOpeningReveal } from "@/components/GrandOpeningReveal";
@@ -12,6 +13,7 @@ export default function Home() {
         <GrandOpeningReveal />
         <CountdownSection />
         <EventDetails />
+        <OfficeGallery />
         <InvitationMessage />
         <InvitationFooter />
       </InvitationWelcome>

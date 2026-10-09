@@ -28,7 +28,7 @@ export function AnimatedEnvelope({ opened }: AnimatedEnvelopeProps) {
         transition={{ delay: reduceMotion ? 0 : 0.6, duration, ease: "easeInOut" }}
       >
         <p className="text-[0.6rem] uppercase tracking-[0.15em] text-[#846515]">{invitationConfig.company.name}</p>
-        <p className="mt-2 font-display text-3xl leading-none text-[#7d641a] sm:text-4xl">Grand<br />Opening</p>
+        <p className="mt-2 font-display text-3xl leading-none text-[#7d641a] sm:text-4xl">{invitationConfig.event.titleLines.map((line, index) => <span className="block" key={index}>{line}</span>)}</p>
       </motion.div>
       <motion.div
         className="absolute inset-0 z-20 border border-champagne/40 bg-[#f0e3c4]"

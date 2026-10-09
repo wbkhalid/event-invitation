@@ -17,7 +17,7 @@ function googleCalendarUrl() {
     text: `${invitationConfig.company.name} ${title}`,
     dates: `${format(start)}/${format(end)}`,
     location: `${venue}, ${address}`,
-    details: `Office grand opening. Directions: ${locationUrl}`,
+    details: `${invitationConfig.event.description} Directions: ${locationUrl}`,
   });
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
@@ -38,7 +38,7 @@ export function EventDetails() {
       <div className="mx-auto max-w-6xl">
         <motion.div className="text-center" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <p className="text-xs uppercase tracking-[0.38em] text-champagne/80">Event Details</p>
-          <h2 className="mt-4 font-display text-4xl text-ivory sm:text-6xl">Opening Ceremony</h2>
+          <h2 className="mt-4 font-display text-4xl text-ivory sm:text-6xl">{invitationConfig.event.ceremonyLabel}</h2>
         </motion.div>
         <motion.div className="mx-auto my-10 flex max-w-xl items-center gap-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
           <span className="h-px flex-1 bg-gradient-to-r from-transparent to-champagne/70" />

@@ -16,7 +16,7 @@ export function CountdownSection() {
   return (
     <section id="countdown" aria-labelledby="countdown-heading" className="countdown-scene">
       <motion.div className="countdown-composition" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.8 }}>
-        <div className="countdown-kicker"><span aria-hidden="true" /> <p>Access Solution / Grand Opening</p> <span aria-hidden="true" /></div>
+        <div className="countdown-kicker"><span aria-hidden="true" /> <p>{invitationConfig.company.name} / {invitationConfig.event.title}</p> <span aria-hidden="true" /></div>
         <p className="countdown-prelude font-display">Every second brings us closer.</p>
         <h2 id="countdown-heading" className="countdown-heading font-display">The moment is<br /><em>almost here.</em></h2>
         <div className="countdown-clock"><CountdownTimer targetISO={invitationConfig.event.dateISO} /></div>
@@ -26,7 +26,7 @@ export function CountdownSection() {
             <div><p className="countdown-month">{part("month")}</p><p className="countdown-year">{part("year")}</p></div>
           </div>
           <span className="countdown-date-divider" aria-hidden="true" />
-          <div className="countdown-time"><p>Opening Ceremony</p><p className="font-display">{invitationConfig.event.time}</p></div>
+          <div className="countdown-time"><p>{invitationConfig.event.ceremonyLabel}</p><p className="font-display">{invitationConfig.event.time}</p></div>
         </div>
         <a href="#event-details" className="countdown-next" title="View event details" aria-label="View event details">
           <HugeIcon icon={ArrowDown01Icon} size={24} />

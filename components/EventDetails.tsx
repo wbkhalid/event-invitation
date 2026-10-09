@@ -37,32 +37,32 @@ export function EventDetails() {
     <section id="event-details" className="px-5 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <motion.div className="text-center" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <p className="text-xs uppercase tracking-[0.38em] text-champagne/80">Event Details</p>
+          <p className="text-xs uppercase tracking-[0.38em] text-brand/80">Event Details</p>
           <h2 className="mt-4 font-display text-4xl text-ivory sm:text-6xl">{invitationConfig.event.ceremonyLabel}</h2>
         </motion.div>
         <motion.div className="mx-auto my-10 flex max-w-xl items-center gap-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-champagne/70" />
-          <span className="h-2 w-2 rotate-45 bg-champagne" />
-          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-champagne/70" />
+          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-brand/70" />
+          <span className="h-2 w-2 rotate-45 bg-brand" />
+          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-brand/70" />
         </motion.div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {details.map((item, index) => (
             <motion.div key={item.label} className="luxury-panel rounded-sm p-5" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.08 }}>
-              <div className="mb-5 grid h-11 w-11 place-items-center rounded-full border border-champagne/35 text-champagne">
+              <div className="mb-5 grid h-11 w-11 place-items-center rounded-full border border-brand/35 text-brand">
                 <HugeIcon icon={item.icon} size={22} />
               </div>
-              <p className="text-[0.65rem] uppercase tracking-[0.28em] text-champagne/80">{item.label}</p>
+              <p className="text-[0.65rem] uppercase tracking-[0.28em] text-brand/80">{item.label}</p>
               <p className="mt-2 text-base leading-7 text-ivory/86">{item.value}</p>
             </motion.div>
           ))}
         </div>
 <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
           {calendarUrl ? (
-            <a href={calendarUrl} target="_blank" rel="noreferrer" className="gold-button inline-flex items-center justify-center gap-3 rounded-full px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em]">
+            <a href={calendarUrl} target="_blank" rel="noreferrer" className="brand-button inline-flex items-center justify-center gap-3 rounded-full px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em]">
               <HugeIcon icon={CalendarAdd01Icon} size={18} /> Add to Calendar
             </a>
           ) : (
-            <button type="button" disabled className="gold-button inline-flex cursor-not-allowed items-center justify-center gap-3 rounded-full px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] opacity-60">
+            <button type="button" disabled className="brand-button inline-flex cursor-not-allowed items-center justify-center gap-3 rounded-full px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] opacity-60">
               <HugeIcon icon={CalendarAdd01Icon} size={18} /> Add to Calendar
             </button>
           )}
@@ -72,7 +72,7 @@ export function EventDetails() {
         </div>
         {contactNumber ? (
           <div className="mt-8 flex flex-col items-center gap-4 text-center">
-            <a href={`tel:+${internationalNumber}`} className="inline-flex min-h-12 items-center gap-3 text-ivory/80 underline decoration-champagne/50 underline-offset-4">
+            <a href={`tel:+${internationalNumber}`} className="inline-flex min-h-12 items-center gap-3 text-ivory/80 underline decoration-brand/50 underline-offset-4">
               <HugeIcon icon={Call02Icon} size={20} /> {contactNumber}
             </a>
             <a href={`https://wa.me/${internationalNumber}`} target="_blank" rel="noreferrer" className="ghost-button inline-flex items-center justify-center gap-3 rounded-full px-7 py-3 text-sm">

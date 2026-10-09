@@ -18,7 +18,7 @@ export function AmbientParticles() {
       {particles.map((particle) => (
         <motion.span
           key={particle.id}
-          className="absolute rounded-full bg-champagne/70 shadow-[0_0_14px_rgba(212,175,55,.7)]"
+          className="absolute rounded-full bg-brand/70 shadow-[0_0_14px_rgba(218,55,59,.7)]"
           style={{ left: particle.left, top: particle.top, width: particle.size, height: particle.size }}
           animate={reduceMotion ? { opacity: 0.28 } : { y: [-8, -34, -8], opacity: [0.12, 0.8, 0.12], scale: [0.8, 1.25, 0.8] }}
           transition={{ duration: 4.5 + (particle.id % 5), repeat: Infinity, delay: particle.delay, ease: "easeInOut" }}

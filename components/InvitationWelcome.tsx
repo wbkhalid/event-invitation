@@ -53,7 +53,7 @@ export function InvitationWelcome({ children }: InvitationWelcomeProps) {
               transition={{ duration: 0.7 }}
             >
               <Image src={invitationConfig.company.logoSrc} alt={`${invitationConfig.company.name} logo`} width={311} height={311} priority className="welcome-logo mx-auto object-contain" />
-              <p className="welcome-eyebrow uppercase text-champagne/85">
+              <p className="welcome-eyebrow uppercase text-brand/85">
                 You&apos;re Cordially Invited
               </p>
               <h1 className="welcome-company font-display text-ivory">
@@ -66,7 +66,7 @@ export function InvitationWelcome({ children }: InvitationWelcomeProps) {
                 aria-label={`Open your invitation to ${invitationConfig.company.name}'s ${invitationConfig.event.title}`}
                 aria-expanded={opened}
                 aria-controls={revealed ? "invitation-content" : undefined}
-                className="mx-auto block cursor-pointer border-0 bg-transparent p-0 focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-champagne disabled:cursor-default"
+                className="mx-auto block cursor-pointer border-0 bg-transparent p-0 focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-brand disabled:cursor-default"
                 whileHover={opened ? undefined : { scale: 1.025 }}
                 whileTap={opened ? undefined : { scale: 0.98 }}
               >

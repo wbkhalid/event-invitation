@@ -39,8 +39,8 @@ export function OfficeGallery() {
       <div className="mx-auto max-w-6xl">
         <motion.div className="gallery-heading" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <div>
-            <p className="text-xs uppercase text-champagne/80">A Glimpse Inside</p>
-            <h2 id="gallery-heading" className="mt-3 font-display text-4xl text-ivory sm:text-5xl">Our new home.<br /><em className="text-champagne">Your warm welcome.</em></h2>
+            <p className="text-xs uppercase text-brand/80">A Glimpse Inside</p>
+            <h2 id="gallery-heading" className="mt-3 font-display text-4xl text-ivory sm:text-5xl">Our new home.<br /><em className="text-brand">Your warm welcome.</em></h2>
           </div>
           <p className="max-w-sm text-sm leading-7 text-ivory/65">A place for fresh ideas, shared ambitions, and the people who make it all possible.</p>
         </motion.div>
@@ -52,7 +52,7 @@ export function OfficeGallery() {
                   <Image src={photo.src} alt={photo.alt} width={photo.width} height={photo.height} sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1199px) 48vw, 560px" onError={() => imageFailed(photo.src)} />
                 )}
               </button>
-              <figcaption className="gallery-caption"><span className="text-champagne/65">{String(index + 1).padStart(2, "0")}</span><span>{photo.title}</span></figcaption>
+              <figcaption className="gallery-caption"><span className="text-brand/65">{String(index + 1).padStart(2, "0")}</span><span>{photo.title}</span></figcaption>
             </motion.figure>
           ))}
         </div>

@@ -40,7 +40,7 @@ export function CountdownTimer({ targetISO }: CountdownTimerProps) {
 
   return (
     <div>
-      <div className="countdown-units" role="timer" aria-label="Time until the gathering" aria-live="off">
+      <div className="countdown-units" role="timer" aria-label="Time until the dinner" aria-live="off">
         {units.map(([label, value]) => {
           const display = value === undefined ? "--" : String(value).padStart(2, "0");
           return (
@@ -55,7 +55,7 @@ export function CountdownTimer({ targetISO }: CountdownTimerProps) {
           );
         })}
       </div>
-      <p className="countdown-status">{started ? "The gathering has begun." : "Counting down to a new beginning"}</p>
+      <p className="countdown-status">{started ? "The dinner has begun." : "Counting down to an evening together"}</p>
     </div>
   );
 }

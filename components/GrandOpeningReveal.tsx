@@ -95,7 +95,7 @@ export function GrandOpeningReveal() {
           viewport={{ once: true }}
           transition={{ delay: 0.7 }}
         >
-          &quot;A New Beginning. A Greater Vision. An Exciting Future.&quot;
+          &quot;Good Food. Great Company. Beautiful Memories.&quot;
         </motion.blockquote>
         <motion.p
           className="hero-message mx-auto max-w-2xl text-ivory/72"

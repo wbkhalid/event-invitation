@@ -40,9 +40,9 @@ export function OfficeGallery() {
         <motion.div className="gallery-heading" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <div>
             <p className="text-xs uppercase text-brand/80">A Glimpse Inside</p>
-            <h2 id="gallery-heading" className="mt-3 font-display text-4xl text-ivory sm:text-5xl">Our new home.<br /><em className="text-brand">Your warm welcome.</em></h2>
+            <h2 id="gallery-heading" className="mt-3 font-display text-4xl text-ivory sm:text-5xl">Our office.<br /><em className="text-brand">Your warm welcome.</em></h2>
           </div>
-          <p className="max-w-sm text-sm leading-7 text-ivory/65">A place for fresh ideas, shared ambitions, and the people who make it all possible.</p>
+          <p className="max-w-sm text-sm leading-7 text-ivory/65">The setting for an evening of good food, warm conversation, and great company.</p>
         </motion.div>
         <div className="gallery-grid">
           {photos.map((photo, index) => (

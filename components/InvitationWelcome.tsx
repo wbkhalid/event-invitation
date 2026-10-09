@@ -41,7 +41,7 @@ export function InvitationWelcome({ children }: InvitationWelcomeProps) {
         {!revealed ? (
           <motion.section
             key="welcome"
-            className="relative grid h-[100svh] place-items-center overflow-hidden px-4 py-6 text-center"
+            className="relative grid h-[100svh] place-items-center overflow-hidden px-4 py-4 text-center"
             exit={{ opacity: 0 }}
             transition={{ duration: reduceMotion ? 0 : 0.4 }}
           >
@@ -65,12 +65,21 @@ export function InvitationWelcome({ children }: InvitationWelcomeProps) {
                 disabled={opened}
                 aria-label={`Open your invitation to ${invitationConfig.company.name}'s ${invitationConfig.event.title}`}
                 aria-expanded={opened}
+                aria-describedby="envelope-open-hint"
                 aria-controls={revealed ? "invitation-content" : undefined}
                 className="mx-auto block cursor-pointer border-0 bg-transparent p-0 focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-brand disabled:cursor-default"
                 whileHover={opened ? undefined : { scale: 1.025 }}
                 whileTap={opened ? undefined : { scale: 0.98 }}
               >
                 <AnimatedEnvelope opened={opened} />
+                <motion.span
+                  id="envelope-open-hint"
+                  className="block pt-3 text-xs leading-[18px] text-ivory/85"
+                  animate={opened || reduceMotion ? { opacity: 1 } : { opacity: [0.65, 1, 0.65] }}
+                  transition={{ duration: 2, repeat: opened || reduceMotion ? 0 : Infinity }}
+                >
+                  {opened ? "Opening your invitation..." : "Tap the envelope to open"}
+                </motion.span>
               </motion.button>
             </motion.div>
           </motion.section>

@@ -12,10 +12,10 @@ export function InvitationMessage() {
           Every new beginning is more meaningful when shared.
         </p>
         <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-ivory/74 sm:text-lg">
-          Join us in offering prayers for a blessed beginning and sharing a joyful gathering at our office.
+          Join us for the opening of our office and a joyful gathering to celebrate a new beginning.
         </p>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-ivory/74 sm:text-lg">
-          Your prayers, good wishes, and presence will make this occasion even more memorable.
+          Your good wishes and presence will make this occasion even more memorable.
         </p>
         <p className="mt-8 font-display text-3xl text-brand sm:text-4xl">We Look Forward to Celebrating With You.</p>
         <p className="mt-4 text-sm uppercase tracking-[0.28em] text-ivory/62">- The {invitationConfig.company.name} Team</p>

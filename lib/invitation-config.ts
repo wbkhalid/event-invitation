@@ -21,8 +21,8 @@ export const invitationConfig = {
     contactNumber: "03067660000",
   },
   gallery: [
-    { src: "/office/workspace.jpg", title: "Our Workspace", alt: "Access Solution's shared workspace with a long marble-pattern desk and black office chairs", width: 1600, height: 900 },
-    { src: "/office/meeting-room.jpg", title: "The Meeting Room", alt: "Access Solution's meeting room with a conference table, leather chairs, and warm wall lighting", width: 1600, height: 900 },
+    { src: "/office/workspace-v2.jpg", title: "Our Workspace", alt: "Access Solution's shared workspace with divided marble-pattern desks and black office chairs", width: 3024, height: 4032 },
+    { src: "/office/meeting-room-v2.jpg", title: "The Meeting Room", alt: "Access Solution's meeting room with a conference table, plants, leather chairs, and warm wall lighting", width: 3120, height: 4160 },
     { src: "/office/team-space.jpg", title: "Room to Grow", alt: "Access Solution's team office with shared desks and framed motivational artwork", width: 1600, height: 900 },
     { src: "/office/creative-space.jpg", title: "Where Ideas Begin", alt: "Access Solution's office desks beneath orange motivational posters on a dark feature wall", width: 1600, height: 900 },
   ],

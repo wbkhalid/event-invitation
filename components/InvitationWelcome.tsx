@@ -70,7 +70,6 @@ export function InvitationWelcome({ children }: InvitationWelcomeProps) {
               >
                 <AnimatedEnvelope opened={opened} />
               </motion.button>
-              {/* <p className="mt-7 text-xs text-ivory/65">{invitationConfig.event.dateLabel} <span aria-hidden="true"> / </span> {invitationConfig.event.time}</p> */}
             </motion.div>
           </motion.section>
         ) : (
